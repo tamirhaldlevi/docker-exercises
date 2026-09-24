@@ -14,3 +14,5 @@ jobs:
     - run: docker run -d --name site2 -p 9090:8000 minside
     - run: sleep 2 && curl -f localhost:9090
     - run: docker rm -f site2
+    - run: bash image.sh
+    - run: bash image.sh
